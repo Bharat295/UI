@@ -1,1 +1,19 @@
- 
+.custom-box {
+    border: 5px solid #1EA640;
+    background-color: #0E6725;
+    border-radius: 25px;
+    width: 80%;
+    margin: 20px;
+    padding: 5px;
+    color: white;
+    font-size: 23px;
+    display: flex;
+}
+.text-box{
+    width: 80%;
+    margin: 40px;
+    padding: 5px;
+    color: white;
+    font-size: 23px;
+    display: flex;
+}

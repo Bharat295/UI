@@ -1,12 +1,13 @@
  
 import './App.css';
 import Header from './components/Header.jsx';
-import Temp from './components/Temp';
+import Payment from './components/Payment';
+
 function App() {
   return (
     <div  >
-      <Header/>
-      {/* <Temp/> */}
+      {/* <Header/> */}
+      <Payment/>
     </div>
   );
 }
