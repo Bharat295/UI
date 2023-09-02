@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/style.css';
-import { Box ,Stack } from '@mui/material';
+import { Box  } from '@mui/material';
 import image1 from '../images/ace_club.png';
 import image2 from '../images/ace_diamond.png';
 import image3 from '../images/ace_heart.png';
@@ -158,6 +158,7 @@ export default function Header() {
             <img src={image3} alt="Image 1" style={{ maxWidth: '25%' }} />
           </Box>
         </Box>
+        
         <Box
           border='6px solid #26AA47'
           width='100%'
@@ -463,6 +464,7 @@ export default function Header() {
 
           </Box>
         </Box>
+      
       </Box>
     </Box>
 
