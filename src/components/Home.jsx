@@ -3,9 +3,10 @@ import { Box  } from '@mui/material';
  
 import '../style/style.css';
 
-import RightSidebar from './RightSidebar';
 import LeftSideBar from './LeftSideBar';
 import NavBar from './NavBar';
+import Account from './Account';
+import Payment from './Payment';
 
 export default function Home() {
     const [isAccount, setAccount] = useState(1);
@@ -29,9 +30,11 @@ export default function Home() {
                 display='flex'
                 flexDirection='row'
             >
-                <LeftSideBar setAccount={setAccount} /> 
-                <RightSidebar isAccount={isAccount} />
-
+                <LeftSideBar setAccount={setAccount} />
+                {
+                    isAccount ? <Account/> : <Payment/>
+                }
+                
             </Box>
         </Box>
     )
