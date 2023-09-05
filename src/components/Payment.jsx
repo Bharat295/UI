@@ -1,10 +1,28 @@
- import React from 'react'
+import React from 'react'
 import { Box ,Button, TextField } from '@mui/material';
  
 import '../style/style.css';
 
 
 export default function Payment() {
+  
+  const data = {
+    "totalWinCoin": 23,
+    "currentCoin": 34,
+    "withdrwalLimit": 23233,
+    "totalPaymetRecived":4322,
+    "paymentHistory": [],
+    "userId": 'Raj123',
+    "_id": "64f22ff52cba3c9e7c837f31",
+    "firstName": "Raj",
+    "lastName": "Kumar",
+    "email": "scripterhunts@gmail.com",
+    "phone": 999999999,
+    "gameMoney": 100,
+    "active": true,
+    "accountType": "Gammer"
+  }
+  
   return (
     <Box
     border='6px solid #26AA47'
@@ -27,21 +45,45 @@ export default function Payment() {
         
       <Box
         className='custom-box'
-        left='30%'
-        right='30%'
-        
+        // left='30%'
+        //   right='30%'
+          justifyContent='space-between'
+         
       >
-        Total Winnings
+          <div>
+           
+           Total Winnings
+          </div>
+          <div>
+             {data.totalWinCoin}
+          </div>
+
     </Box>  
       <Box
-         className = 'custom-box'
+          className='custom-box'
+          justifyContent='space-between'
       >
-        Payment received
+        <div>
+           
+           Total Payment
+          </div>
+          <div>
+             {data.totalPaymetRecived}
+          </div>
     </Box>  
       <Box
-         className = 'custom-box'
+          className='custom-box'
+          justifyContent='space-between'
       >
-        Withdrawal Limit
+        <div>
+           
+           Withdrawal
+          </div>
+          <div>
+             {data.withdrwalLimit}
+          </div>
+          
+
         </Box> 
        
         <Box
@@ -87,9 +129,17 @@ export default function Payment() {
 
         </Box>
         <Box
-         className = 'custom-box'
+          className='custom-box'
+          justifyContent='space-between'
       >
-        Amount Processed
+          <div>
+         Amount 
+        </div>
+          <div>
+            {data.totalPaymetRecived}
+        </div>
+        
+        
         </Box> 
       
         <div style={{

@@ -5,7 +5,9 @@ import '../style/style.css';
 import heart from '../images/heart.png';
 
 export default function NavBar() {
-  return (
+  
+    return (
+    
     <Box
     border='6px solid #26AA47'
     display='flex'
@@ -23,7 +25,9 @@ export default function NavBar() {
     <img src={coin} alt="Image 1" width='30px' />
 
 
-    <h1
+            <h1
+                
+
         style={{
             // fontSize: '30px',
             margin: '0',
@@ -38,7 +42,8 @@ export default function NavBar() {
         display='flex'
         flexDirection='row'
     >
-        <div>
+                <div>
+              
 
             <h2
                 style={{
